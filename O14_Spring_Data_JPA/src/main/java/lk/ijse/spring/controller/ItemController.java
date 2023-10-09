@@ -20,10 +20,10 @@ public class ItemController {
         service.saveItem(item);
         return new ResponseUtil("Ok","Successfully Added",item);
     }
-    @DeleteMapping(params = {"id"})
-    public ResponseUtil deleteItem(String id){
-        service.deleteItem(id);
-        return new ResponseUtil("Ok","Successfully Deleted",id);
+    @DeleteMapping(params = {"code"})
+    public ResponseUtil deleteItem(String code){
+        service.deleteItem(code);
+        return new ResponseUtil("Ok","Successfully Deleted",code);
     }
 
     @GetMapping

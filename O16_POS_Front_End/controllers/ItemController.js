@@ -34,7 +34,7 @@ function bindItemTrEvents() {
 //delete btn event
 $("#btnItemDelete").click(function () {
     let code = $("#itemCode").val();
-    
+
     let consent = confirm("Do you want to delete.?");
     if (consent) {
         let response = deleteItem(code);
